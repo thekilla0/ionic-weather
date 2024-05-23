@@ -1,20 +1,73 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title> Weather app </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="main">
+    <span class="city">Melbourne</span>
+    <span class="date">Mon, 2:28pm</span>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <div class="icon">
+      <img src="../../assets/2x.png" alt="" />
+    </div>
+
+    <span class="description">Cloudy</span>
+    <span class="temperature">18c</span>
   </div>
+  <!--7 day forecast grid-->
+  <ion-grid>
+    <!--Day row-->
+    <ion-row>
+      <ion-col class="day">Tue</ion-col>
+      <ion-col class="day">Wed</ion-col>
+      <ion-col class="day">Thur</ion-col>
+      <ion-col class="day">Fri</ion-col>
+      <ion-col class="day">Sat</ion-col>
+      <ion-col class="day">Sun</ion-col>
+      <ion-col class="day">Mon</ion-col>
+    </ion-row>
+    <!--Chances of precipitation-->
+    <ion-row>
+      <ion-col class="precipitation">60%</ion-col>
+      <ion-col class="precipitation">-</ion-col>
+      <ion-col class="precipitation">20%</ion-col>
+      <ion-col class="precipitation">60%</ion-col>
+      <ion-col class="precipitation">-</ion-col>
+      <ion-col class="precipitation">-</ion-col>
+      <ion-col class="precipitation">-</ion-col>
+    </ion-row>
+
+    <!--weather icon-->
+    <ion-row>
+      <ion-col class="icon-sm"><img src="../../assets/2x.png" /></ion-col>
+      <ion-col class="icon-sm"><img src="../../assets/2x.png" /></ion-col>
+      <ion-col class="icon-sm"><img src="../../assets/2x.png" /></ion-col>
+      <ion-col class="icon-sm"><img src="../../assets/2x.png" /></ion-col>
+      <ion-col class="icon-sm"><img src="../../assets/2x.png" /></ion-col>
+      <ion-col class="icon-sm"><img src="../../assets/2x.png" /></ion-col>
+      <ion-col class="icon-sm"><img src="../../assets/2x.png" /></ion-col>
+    </ion-row>
+
+    <!--Max temperature-->
+    <ion-row>
+      <ion-col class="hi-sm">25°c</ion-col>
+      <ion-col class="hi-sm">27°c</ion-col>
+      <ion-col class="hi-sm">25°c</ion-col>
+      <ion-col class="hi-sm">23°c</ion-col>
+      <ion-col class="hi-sm">25°c</ion-col>
+      <ion-col class="hi-sm">28°c</ion-col>
+      <ion-col class="hi-sm">32°c</ion-col>
+    </ion-row>
+
+    <!--Min temperature-->
+    <ion-col class="lo-sm">15°c</ion-col>
+    <ion-col class="lo-sm">16°c</ion-col>
+    <ion-col class="lo-sm">14°c</ion-col>
+    <ion-col class="lo-sm">12°c</ion-col>
+    <ion-col class="lo-sm">16°c</ion-col>
+    <ion-col class="lo-sm">19°c</ion-col>
+    <ion-col class="lo-sm">21°c</ion-col>
+  </ion-grid>
 </ion-content>
